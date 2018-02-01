@@ -1,0 +1,40 @@
+.btn {
+  display: block;
+  width: 100.0%;
+  padding: 16px 0;
+
+  text-align: center;
+
+  font-family: OpenSans, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  color: @grey-text;
+  text-transform: uppercase;
+
+  background-color: transparent;
+
+  border: 2px solid @grey-text;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
+
+  &:hover{
+    color: #fff;
+    background-color: @grey-text;
+
+    transition: 0.5s;
+  }
+
+  &:active {
+    color: @grey-hover;
+    background-color: @grey-text;
+
+    transition: 0.2s;
+  }
+}

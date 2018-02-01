@@ -1,0 +1,242 @@
+<!doctype HTML>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Mishka</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="img/favicon.png" type="image/png" rel="shortcut icon">
+    <link rel="stylesheet" href="css/style.min.css" type="text/css">
+</head>
+<body>
+<header class="page-header">
+    <div class="page-header__upper-nav">
+        <h1 class="visually-hidden">Мишка - магазин изделий ручной работы</h1>
+        <div class="page-header__wrapper">
+            <nav class="main-nav main-nav--closed main-nav--nojs">
+                <button class="main-nav__toggle" type="button">Открыть меню</button>
+
+                <ul class="main-nav__list">
+                    <li class="main-nav__item main-nav__item--logo">
+                        <a>
+                            <picture>
+                                <source media="(min-width: 1150px)" srcset="img/icons/mishka-logo-desktop.svg">
+                                <source media="(min-width: 768px)" srcset="img/icons/mishka-logo-tablet.svg">
+                                <img src="img/icons/mishka-logo-mobile.svg" width="86" height="35" alt="Mishka-logo">
+                            </picture>
+                        </a>
+                    </li>
+
+                    <li class="main-nav__item main-nav__item--catalog">
+                        <a href="catalog.html">Каталог товаров</a>
+                    </li>
+
+                    <li class="main-nav__item main-nav__item--order">
+                        <a href="order.html">Вязание на заказ</a>
+                    </li>
+
+                    <li class="main-nav__item main-nav__item--search">
+                        <a href="#">
+                            <svg class="main-nav__search-icon" width="17.6" height="17.6">
+                                <use xlink:href="img/symbols.svg#icon-search"></use>
+                            </svg>
+                            <span class="main-nav__item--icon-text main-nav__item--icon-text-hidden">Поиск по сайту</span>
+                        </a>
+                    </li>
+
+                    <li class="main-nav__item main-nav__item--cart">
+                        <a href="#">
+                            <svg class="main-nav__cart-icon" width="20.3" height="18.9">
+                                <use xlink:href="/img/symbols.svg#icon-cart"></use>
+                            </svg>
+                            <span class="main-nav__item--icon-text">Корзина: пока пуста</span>
+                        </a>
+                    </li>
+
+                    <li class="main-nav__item main-nav__item--new main-nav__item--desktop">
+                        <a href="#">Новые поступления</a>
+                    </li>
+
+                    <li class="main-nav__item main-nav__item--sale main-nav__item--desktop">
+                        <a href="#">Распродажа</a>
+                    </li>
+
+                    <li class="main-nav__item main-nav__item--delivery main-nav__item--desktop">
+                        <a href="#">Бесплатная доставка по России</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="header-intro">
+        <div class="header-intro__slogan">
+            <h2 class="header-intro__slogan-text">Милые штучки ручной<br> работы для дома</h2>
+        </div>
+
+        <div class="page-header__wrapper">
+            <div class="header-intro__types">
+                <div class="header-intro__types-item header-intro__types-item--interior">
+                    <div class="header-intro__wrapper--types-item">
+                        <a class="header-intro__types-content" href="#">
+                            <span>Предметы интерьера</span>
+                            <svg class="header-intro__interior-logo" width="40" height="62.5">
+                                <use xlink:href="img/symbols.svg#interior"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header-intro__types-item header-intro__types-item--toys">
+                    <div class="header-intro__wrapper--types-item">
+                        <a class="header-intro__types-content" href="#">
+                            <span>Детские игрушки</span>
+                            <svg class="header-intro__toys-logo" width="60" height="59.6">
+                                <use xlink:href="img/symbols.svg#icon-toy"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+
+<section class="product_of_week">
+    <div class="product_of_week__wrapper">
+        <div class="product_of_week__name">
+            <h2 class="product_of_week__title">
+                Вязаные корзинки
+            </h2>
+            <span class="product_of_week__week"> Товар недели</span>
+        </div>
+        <p class="product_of_week__descr">
+            Экологически чистая пряжа, ручная работаю Доступны в шести расцветках и трех размерах.
+        </p>
+        <div class="product_of_week__detail-descr">
+            <div class="product_of_week__type-descr">
+                <span class="product_of_week__type-descr-title">Цвет:</span>
+                <span class="product_of_week__type-descr-detail">"Тиффани"/серый</span>
+            </div>
+            <div class="product_of_week__type-descr">
+                <span class="product_of_week__type-descr-title">Диаметр:</span>
+                <span class="product_of_week__type-descr-detail">25 см</span>
+            </div>
+            <div class="product_of_week__type-descr">
+                <span class="product_of_week__type-descr-title">Высота:</span>
+                <span class="product_of_week__type-descr-detail">15 см</span>
+            </div>
+        </div>
+
+        <div class="product_of_week__image">
+            <picture>
+                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg">
+                <img src="img/triple-set-mobile.jpg" width="260" height="315" alt="Carts">
+            </picture>
+        </div>
+
+        <div class="product_of_week__price-block">
+            <span>Цена: <span class="product_of_week__price">990</span> руб.</span>
+        </div>
+        <button class="product_of_week__order btn" type="button">Заказать</button>
+    </div>
+</section>
+
+<section class="about-us">
+    <div class="about-us__wrapper">
+        <h2 class="about-us__title">Коротко о нас:</h2>
+        <ul class="about-us__list">
+            <li class="about-us__item">Экологически чистые материалы</li>
+            <li class="about-us__item">Скандинавский стиль по российской цене</li>
+            <li class="about-us__item">Увеличивает лайки на фотографиях</li>
+            <li class="about-us__item">Связано вручную с любовью и умилением</li>
+            <li class="about-us__item">Поддержка отечественного производителя</li>
+            <li class="about-us__item">Поставляется в подарочной упаковке</li>
+        </ul>
+    </div>
+</section>
+
+<section class="reviews">
+    <div class="reviews__wrapper">
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__list">
+            <blockquote class="reviews__item reviews__item--active">
+                <p class="reviews__text">s1111111dfsdf sdddd dddddd dddddddd dsfdvf vddfvdfvdffdv fdvdfv dsfvdfsvdf vdsf
+                    sdv dfvdvfd vsdfvsfdv sfdv sfdv dsf vdsf vsfd vsds sdv fsdvsdv sdvsdvvvvv vvvv f</p>
+                <p class="reviews__author-name">Анастасия Красильникова</p>
+                <span class="reviews__author-insta">@misssssiskras</span>
+            </blockquote>
+
+            <blockquote class="reviews__item">
+                <p class="reviews__text">s2222222222dddd dffdfddf fd df df vfdf  dddddddd dsdv fsdvsdv sdvsdvvvvv vvvv</p>
+                <p class="reviews__author-name">sdfg Красильникова</p>
+                <span class="reviews__author-insta">@misssssiskras</span>
+            </blockquote>
+
+            <blockquote class="reviews__item">
+                <p class="reviews__text">333333333sdfsdf sdddd dddddd dddddddd dsfdvf vddfvdfvdffdv fdvdfv dsfvdfsvdf vdsf
+                    sdv dfvdvfd vsdfvsfdv sfdv sfdv dsf vdsf vsfd vsds sdv fsdvsdv sdvsdvvvvv vvvv</p>
+                <p class="reviews__author-name">dffd Красильникова</p>
+                <span class="reviews__author-insta">@misssssiskras</span>
+            </blockquote>
+        </div>
+
+        <div class="reviews__btns">
+            <button class="reviews__btn reviews__btn--prev" type="button">Предыдущий</button>
+            <button class="reviews__btn reviews__btn--next" type="button">Следующий</button>
+        </div>
+        <a class="reviews__btn-write btn" href="#">Написать</a>
+    </div>
+</section>
+
+<section class="contact">
+    <div class="contact__wrapper">
+        <h2 class="contact__title">Контакты</h2>
+        <div class="contact__type">
+            <span class="contact__type-name">e-mail:</span>
+            <span class="contact__data contact__data--mail">info@mymishkashop.ru</span>
+        </div>
+        <div class="contact__type">
+            <span class="contact__type-name">адрес:</span>
+            <span class="contact__data">г.Петрозаводск,<br>
+            ул. Ленина,<br>
+            д. 14, офис 102</span>
+        </div>
+    </div>
+
+    <div class="contact__map"></div>
+    <div class="contact__wrapper">
+        <div class="contact__feedback btn">Напишите нам</div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer__wrapper">
+        <a class="footer__logo" href="#">
+            <svg class="footer__logo-img" width="112" height="46">
+                <use xlink:href="img/symbols.svg#mishka-logo-tablet" style="fill: #000"></use>
+            </svg>
+        </a>
+        <div class="footer__social">
+            <svg class="footer__social-icon footer__social-icon--insta" width="24" height="22">
+                <use xlink:href="img/symbols.svg#insta"></use>
+            </svg>
+            <svg class="footer__social-icon footer__social-icon--fb" width="15" height="28">
+                <use xlink:href="img/symbols.svg#icon-fb"></use>
+            </svg>
+            <svg class="footer__social-icon footer__social-icon--twitter" width="24" height="21">
+                <use xlink:href="img/symbols.svg#icon-twitter"></use>
+            </svg>
+        </div>
+
+        <div class="footer__copyright"><span class="footer__copyright-text">Разработано:</span>
+            <a href="#" class="footer__copyright-link">EvgKtv</a>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBShtfY8qyeSDJEeDtZWAOntXeyxEcJHMk"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

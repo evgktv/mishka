@@ -1,0 +1,161 @@
+.catalog__wrapper {
+  .container();
+}
+
+.catalog__item {
+  margin-bottom: 30px;
+}
+
+.catalog__item-img img {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.catalog__item-description {
+  margin: 0 20px;
+  padding-bottom: 22px;
+
+  border-bottom: 1px solid @grey-light
+}
+
+.catalog__item-name {
+  margin: 0;
+  margin-bottom: 8px;
+
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  color: @black;
+}
+
+.catalog__item-info {
+  margin: 0;
+
+  font-family: OpenSans, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: @grey-text;
+}
+
+.catalog__item-price {
+  position: relative;
+  padding: 25px 20px;
+  display: block;
+
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  color: @black;
+
+  &::after {
+    position: absolute;
+    content: "";
+
+    width: 20px;
+    height: 19px;
+
+    right: 20px;
+    top: 25px;
+
+    opacity: 0.5;
+
+    background: url("../img/icons/icon-cart.svg");
+
+    cursor: pointer;
+  }
+
+  border-bottom: 1px solid @grey-light;
+}
+
+@media @tablet-widths {
+
+  .catalog__wrapper {
+    .container-fluid();
+  }
+
+  .catalog__item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 55px;
+
+    border: 1px solid @bg-grey;
+  }
+
+  .catalog__item-img {
+    position: relative;
+
+    width: 334px;
+    height: 334px;
+  }
+
+  .catalog__item-img img {
+    width: 334px;
+    height: 334px;
+  }
+
+  .catolog__item-all-info {
+    width: 49%;
+  }
+  .catalog__item-description {
+    padding-bottom: 0;
+    height: 242px;
+  }
+
+  .catalog__item-name {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .catalog__item-price {
+    font-size: 16px;
+  }
+
+  .catalog__item-info {
+    font-size: 15px;
+  }
+}
+
+@media @desktop-widths {
+
+  .catalog__wrapper {
+    .container-fluid();
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    display: block;
+    width: 316px;
+
+    flex-wrap: wrap;
+    margin-bottom: 55px;
+
+    border: 1px solid @bg-grey;
+  }
+
+  .catalog__item-img {
+    width: 316px;
+    height: 462px;
+    margin-bottom: 20px;
+  }
+
+  .catalog__item-img img {
+    width: 316px;
+    height: 462px;
+  }
+
+  .catolog__item-all-info {
+    width: 100%;
+  }
+  .catalog__item-description {
+    padding-bottom: 0;
+    height: 96px;
+  }
+}

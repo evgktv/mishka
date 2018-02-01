@@ -1,0 +1,27 @@
+.page-header {
+  margin-bottom: 30px;
+}
+
+@media @tablet-widths  {
+
+  .page-header {
+    width: 100%;
+
+    &__upper-nav {
+      height: 90px;
+
+      border-bottom: 1px solid @grey-light;
+    }
+  }
+
+  .page-header__wrapper {
+    .container-fluid();
+  }
+}
+
+@media @desktop-widths  {
+
+  .page-header {
+    margin-bottom: 74px;
+  }
+}

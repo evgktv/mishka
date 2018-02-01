@@ -1,0 +1,179 @@
+.header-intro {
+  background-color: @bg-grey;
+}
+
+@media @mobile-widths-only {
+  .header-intro__wrapper--types-item {
+    .container();
+  }
+}
+
+  .header-intro__slogan {
+    width: 100%;
+    height: 210px;
+    padding-top: 90px;
+
+    background-image: url("../img/hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 320px auto;
+
+    text-align: center;
+  }
+
+  .header-intro__slogan-text {
+    margin: 0;
+
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    color: @black;
+  }
+
+  .header-intro__types-item {
+    padding: 20px 0;
+    height: 62px;
+
+    &--interior {
+      background-color: @green;
+    }
+
+    &--toys {
+      background-color: @dark-green;
+    }
+
+    &:hover {
+      height: 70px;
+      margin-top: -8px;
+      transition: 0.5s;
+    }
+  }
+
+  .header-intro__interior-logo,
+  .header-intro__toys-logo {
+    width: 60px;
+
+    opacity: 0.2;
+  }
+
+  .header-intro__types-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & span {
+      margin: 0;
+      width: 110px;
+
+      font-family: Verdana, Arial, sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      color: @white;
+    }
+
+    &:hover span {
+      color: @grey-hover;
+    }
+
+    &:hover .header-intro__toys-logo,
+    &:hover .header-intro__interior-logo {
+      opacity: 0.7;
+    }
+
+    &:active span {
+      color: @grey-active;
+    }
+
+    &:active,
+    &:focus {
+      border: 0;
+      outline: 0;
+    }
+  }
+
+  .header-intro__zigzag {
+    display: none;
+  }
+
+  @media @tablet-widths {
+
+    .header-intro {
+      position: relative;
+      z-index: 10;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 34px;
+        bottom: 0;
+
+        background: url("../img/icons/zigzag-fill.svg") repeat;
+      }
+    }
+
+    .header-intro__slogan {
+      width: 100%;
+      height: 480px;
+      padding-top: 150px;
+
+      background-image: url("../img/hero-desktop.jpg");
+
+      background-size: 1150px 746px;
+    }
+
+    .header-intro__slogan-text {
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    .header-intro__wrapper {
+      .container-fluid();
+    }
+
+    .header-intro__types {
+      display: flex;
+      flex-grow: 1;
+    }
+
+    .header-intro__types-item {
+      width: 50%;
+      height: 100px;
+
+      &:hover {
+        height: 108px;
+        margin-top: -8px;
+        transition: 0.5s;
+      }
+    }
+
+    .header-intro__types-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+
+      & span {
+        margin-left: 10%;
+        width: 110px;
+
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      & svg {
+        margin-right: 10%;
+      }
+    }
+
+    .header-intro__zigzag {
+      display: block;
+      position: absolute;
+      width: 2200px;
+      height: 34px;
+
+      bottom: 0;
+      left:0;
+    }
+  }

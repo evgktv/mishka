@@ -1,0 +1,170 @@
+.about-us {
+  margin-bottom: 65px;
+}
+
+.about-us__wrapper {
+  .container();
+}
+
+.about-us__title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  color: @black;
+}
+
+.about-us__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.about-us__item {
+  position: relative;
+  padding-top: 58px;
+  margin-bottom: 30px;
+
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 21px;
+  color: @black;
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    width: 54px;
+    height: 38px;
+
+    top: 0;
+    left: 0;
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:nth-child(1)::before {
+    background-image: url("../img/icons/icon-1.svg");
+  }
+
+  &:nth-child(2)::before {
+    background-image: url("../img/icons/icon-3.svg");
+  }
+
+  &:nth-child(3)::before {
+    background-image: url("../img/icons/icon-2.svg");
+  }
+
+  &:nth-child(4)::before {
+    background-image: url("../img/icons/icon-5.svg");
+  }
+
+  &:nth-child(5)::before {
+    left: -5px;
+
+    background-image: url("../img/icons/icon-4.svg");
+  }
+
+  &:nth-child(6)::before {
+    background-image: url("../img/icons/icon-6.svg");
+  }
+}
+
+@media @tablet-widths {
+
+  .about-us {
+    margin-bottom: 75px;
+  }
+
+  .about-us__wrapper {
+    .container-fluid();
+  }
+
+  .about-us__title {
+    margin-bottom: 55px;
+
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .about-us__item {
+    width: 50%;
+    margin-bottom: 55px;
+
+    font-size: 20px;
+
+    &:nth-child(1) {
+      width: 34%;
+      padding-right: 16%;
+    }
+
+    &:nth-child(2) {
+      order: 2;
+
+      width: 38%;
+      padding-right: 12%;
+    }
+    &:nth-child(3) {
+      order: 1;
+
+      width: 35%;
+      padding-right: 15%;
+    }
+
+    &:nth-child(4) {
+      order: 5;
+
+      width: 42%;
+      padding-right: 8%;
+    }
+
+    &:nth-child(5) {
+      order: 4;
+
+      width: 50%;
+      padding-right: 0%;
+    }
+
+    &:nth-child(6) {
+      order: 6;
+
+      width: 40%;
+      padding-right: 10%;
+    }
+  }
+}
+
+@media @desktop-widths {
+
+  .about-us {
+    margin-bottom: 90px;
+  }
+
+  .about-us__wrapper {
+    .container-fluid();
+  }
+
+  .about-us__title {
+    margin-bottom: 55px;
+    margin-left: 16%;
+
+    font-size: 50px;
+    line-height: 57px;
+  }
+
+  .about-us__list {
+    margin: 0 16%;
+  }
+}

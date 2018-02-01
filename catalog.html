@@ -1,0 +1,180 @@
+<!doctype HTML>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Mishka</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="img/favicon.png" type="image/png" rel="shortcut icon">
+    <link rel="stylesheet" href="css/style.min.css" type="text/css">
+</head>
+<body>
+<header class="page-header">
+    <div class="page-header__upper-nav">
+        <h1 class="visually-hidden">Мишка - магазин изделий ручной работы</h1>
+        <div class="page-header__wrapper">
+            <nav class="main-nav main-nav--closed main-nav--nojs">
+                <button class="main-nav__toggle" type="button">Открыть меню</button>
+
+                <ul class="main-nav__list">
+                    <li class="main-nav__item main-nav__item--logo">
+                        <a href="index.html">
+                            <picture>
+                                <source media="(min-width: 1150px)" srcset="img/icons/mishka-logo-desktop.svg">
+                                <source media="(min-width: 768px)" srcset="img/icons/mishka-logo-tablet.svg">
+                                <img src="img/icons/mishka-logo-mobile.svg" width="86" height="35" alt="Mishka-logo">
+                            </picture>
+                        </a>
+                    </li>
+
+                    <li class="main-nav__item main-nav__item--catalog">
+                        <a>Каталог товаров</a>
+                    </li>
+
+                    <li class="main-nav__item main-nav__item--order">
+                        <a href="order.html">Вязание на заказ</a>
+                    </li>
+
+                    <li class="main-nav__item main-nav__item--search">
+                        <a href="#">
+                            <svg class="main-nav__search-icon" width="17.6" height="17.6">
+                                <use xlink:href="img/symbols.svg#icon-search"></use>
+                            </svg>
+                            <span class="main-nav__item--icon-text main-nav__item--icon-text-hidden">Поиск по сайту</span>
+                        </a>
+                    </li>
+
+                    <li class="main-nav__item main-nav__item--cart">
+                        <a href="#">
+                            <svg class="main-nav__cart-icon" width="20.3" height="18.9">
+                                <use xlink:href="/img/symbols.svg#icon-cart"></use>
+                            </svg>
+                            <span class="main-nav__item--icon-text">Корзина: пока пуста</span>
+                        </a>
+                    </li>
+
+                    <li class="main-nav__item main-nav__item--new main-nav__item--desktop">
+                        <a href="#">Новые поступления</a>
+                    </li>
+
+                    <li class="main-nav__item main-nav__item--sale main-nav__item--desktop">
+                        <a href="#">Распродажа</a>
+                    </li>
+
+                    <li class="main-nav__item main-nav__item--delivery main-nav__item--desktop">
+                        <a href="#">Бесплатная доставка по России</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="page-intro">
+        <h2 class="page-intro__title">Каталог товаров</h2>
+    </section>
+</header>
+
+<section class="catalog">
+    <div class="catalog__wrapper">
+        <div class="catalog__list">
+            <div class="catalog__item">
+                <div class="catalog__item-img">
+                    <picture>
+                        <source media="(min-width: 1150px)" srcset="img/photo-1-desktop.jpg">
+                        <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg">
+                        <img src="img/photo-1-mobile.jpg" width="260" height="195" alt="zaica-poprygaica">
+                    </picture>
+                </div>
+                <div class="catolog__item-all-info">
+                    <div class="catalog__item-description">
+                        <h3 class="catalog__item-name">Зайчик-попрыгайчик</h3>
+                        <span class="catalog__item-info">Рост 30 см, вес 200 г</span>
+                    </div>
+                    <span class="catalog__item-price">1 200 руб.</span>
+                </div>
+            </div>
+
+            <div class="catalog__item">
+                <div class="catalog__item-img">
+                    <picture>
+                        <source media="(min-width: 1150px)" srcset="img/photo-2-desktop.jpg">
+                        <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg">
+                        <img src="img/photo-2-mobile.jpg" width="260" height="195" alt="zaica-poprygaica">
+                    </picture>
+                </div>
+                <div class="catolog__item-all-info">
+                    <div class="catalog__item-description">
+                        <h3 class="catalog__item-name">Корзинка для белья</h3>
+                        <span class="catalog__item-info">Диаметр 15 см, высота 10 см</span>
+                    </div>
+                    <span class="catalog__item-price">690 руб.</span>
+                </div>
+            </div>
+
+            <div class="catalog__item clearfix">
+                <div class="catalog__item-img">
+                    <picture>
+                        <source media="(min-width: 1150px)" srcset="img/photo-3-desktop.jpg">
+                        <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg">
+                        <img src="img/photo-3-mobile.jpg" width="260" height="195" alt="zaica-poprygaica">
+                    </picture>
+                </div>
+                <div class="catolog__item-all-info">
+                    <div class="catalog__item-description">
+                        <h3 class="catalog__item-name">Большая корзинка для игрушек</h3>
+                        <span class="catalog__item-info">Диаметр 30 см, высота 30 см</span>
+                    </div>
+                    <span class="catalog__item-price clearfix">1 500 руб.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="video-create">
+    <div class="video-create__wrapper">
+        <h2 class="video-create__title">Процесс производства</h2>
+        <div class="video-create__img">
+            <picture>
+                <source media="(min-width: 1150px)" srcset="img/video-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/video-tablet.jpg">
+                <img src="img/video-mobile.jpg" width="260" height="150" alt="zaica-poprygaica">
+            </picture>
+        </div>
+        <p class="video-create__description">
+            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+        </p>
+        <a class="video-create__order btn" href="#">Сделать заказ</a>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="footer__wrapper">
+        <a class="footer__logo" href="#">
+            <svg class="footer__logo-img" width="112" height="46">
+                <use xlink:href="img/symbols.svg#mishka-logo-tablet" style="fill: #000"></use>
+            </svg>
+        </a>
+        <div class="footer__social">
+            <svg class="footer__social-icon footer__social-icon--insta" width="24" height="22">
+                <use xlink:href="img/symbols.svg#insta"></use>
+            </svg>
+            <svg class="footer__social-icon footer__social-icon--fb" width="15" height="28">
+                <use xlink:href="img/symbols.svg#icon-fb"></use>
+            </svg>
+            <svg class="footer__social-icon footer__social-icon--twitter" width="24" height="21">
+                <use xlink:href="img/symbols.svg#icon-twitter"></use>
+            </svg>
+        </div>
+
+        <div class="footer__copyright"><span class="footer__copyright-text">Разработано:</span>
+            <a href="#" class="footer__copyright-link">EvgKtv</a>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
